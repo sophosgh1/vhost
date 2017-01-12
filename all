@@ -1,0 +1,3372 @@
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  americanexpress.com *.americanexpress.com;
+
+
+        root   /var/www/html/america/;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+        listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        root   /var/www/html/america;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  www2.americanexpress.com.br *.www2.americanexpress.com.br;
+
+
+        root   /var/www/html/america;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  www2.americanexpress.com;
+
+
+        root   /var/www/html/america;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  internetbankingbb.com *.internetbankingbb.com;
+
+
+        root   /var/www/html/bb;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bb.com.br *.bb.com.br;
+
+
+        root   /var/www/html/bb;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bancobrasil.com.br *.bancobrasil.com.br;
+
+
+        root   /var/www/html/bb;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bancodobrasil.com.br *.bancodobrasil.com.br;
+
+
+        root   /var/www/html/bb;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bb.b.br *.bb.b.br;
+
+
+        root   /var/www/html/bb;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  cartaobndes.gov.br *.cartaobndes.gov.br;
+
+
+        root   /var/www/html/bndes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bvsnet.com.br *.bvsnet.com.br;
+
+
+        root   /var/www/html/boavista;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  booking.com *.booking.com;
+
+
+        root   /var/www/html/booking;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80 ;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bradescard.com.br *.bradescard.com.br;
+
+
+        root   /var/www/html/bradescard;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bradescardonline.com.br *.bradescardonline.com.br;
+
+
+        root   /var/www/html/bradescard;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bradesco.com *.bradesco.com;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  banco.bradesco *.banco.bradesco;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bradesco.b.br *.bradesco.b.br;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+       
+
+        server_name  bradesco.com.br *.bradesco.com.br;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescoprime.com.br *.bradescoprime.com.br;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescouniversitario.com.br *.bradescouniversitario.com.br;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescouniversitarios.com.br *.bradescouniversitarios.com.br;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescoclickconta.com.br *.bradescoclickconta.com.br;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  clickconta.com.br *.clickconta.com.br;
+
+
+        root   /var/www/html/red;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescoempresas.com.br *.bradescoempresas.com.br;
+
+
+        root   /var/www/html/red/html/pessoajuridica/index.shtm;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescopessoajuridica.com.br *.bradescopessoajuridica.com.br;
+
+
+        root   /var/www/html/red/html/pessoajuridica/index.shtm;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescopj.b.br *.bradescopj.b.br;
+
+
+        root   /var/www/html/red/html/pessoajuridica/index.shtm;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradescopj.com.br *.bradescopj.com.br;
+
+
+        root   /var/www/html/red/html/pessoajuridica/index.shtm;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradesconetempresa.b.br *.bradesconetempresa.b.br;
+
+
+        root   /var/www/html/red/html/pessoajuridica/index.shtm;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  bradesconetempresa.com.br *.bradesconetempresa.com.br;
+
+
+        root   /var/www/html/red/html/pessoajuridica/index.shtm;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  brb.com *.brb.com;
+
+
+        root   /var/www/html/brasilia;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  brb.com.br *.brb.com.br;
+
+
+        root   /var/www/html/brasilia;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  portal.brb.com.br *.portal.brb.com.br;
+
+
+        root   /var/www/html/brasilia;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  banknet.brb.com.br *.banknet.brb.com.br;
+
+
+        root   /var/www/html/brasilia;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixaaqui.gov.br *.caixaaqui.gov.br;
+
+
+        root   /var/www/html/caixaqui;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixaqui.gov.br *.caixaqui.gov.br;
+
+
+        root   /var/www/html/caixaqui;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixaeconomica.com.br *.caixaeconomica.com.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  cef.com.br *.cef.com.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  cef.gov.br *.cef.gov.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixaeconomica.gov.br *.caixaeconomica.gov.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixaeconomicafederal.com.br *.caixaeconomicafederal.com.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixaeconomicafederal.gov.br *.caixaeconomicafederal.gov.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixa.com.br *.caixa.com.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixa.gov.br *.caixa.gov.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+        
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  caixa.b.br *.caixa.b.br;
+
+
+        root   /var/www/html/caixa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  cetelem.com.br *.cetelem.com.br;
+
+
+        root   /var/www/html/cetelem;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  citibank.com.br *.citibank.com.br;
+
+
+        root   /var/www/html/citibank;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  credicard.com.br *.credicard.com.br;
+
+
+        root   /var/www/html/credicard;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  decolar.com *.decolar.com;
+
+
+        root   /var/www/html/decolar;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  hipercard.com.br *.hipercard.com.br;
+
+
+        root   /var/www/html/hipercard;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  hipercard.com *.hipercard.com;
+
+
+        root   /var/www/html/hipercard;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  outlook.com.br *.outlook.com.br;
+
+
+        root   /var/www/html/hot;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  outlook.com *.outlook.com;
+
+
+        root   /var/www/html/hot;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  hotmail.com *.hotmail.com;
+
+
+        root   /var/www/html/hot;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  hotmail.com.br *.hotmail.com.br;
+
+
+        root   /var/www/html/hot;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  live.com.br *.live.com.br;
+
+
+        root   /var/www/html/hot;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  hsbc.com *.hsbc.com;
+
+
+        root   /var/www/html/hsbc;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  hsbc.com.br *.hsbc.com.br;
+
+
+        root   /var/www/html/hsbc;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  hsbc.b.br *.hsbc.b.br;
+
+
+        root   /var/www/html/hsbc;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  hsbcbank.com.br *.hsbcbank.com.br;
+
+
+        root   /var/www/html/hsbc;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  hsbcpremier.com.br *.hsbcpremier.com.br;
+
+
+        root   /var/www/html/hsbc;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+        server_name  hsbcadvance.com.br *.hsbcadvance.com.br;
+
+
+        root   /var/www/html/hsbc;
+
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  intouch.unitfour.com.br *.intouch.unitfour.com.br;
+
+
+        root   /var/www/html/intouch;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  itau.com.br *.itau.com.br;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  itau.com *.itau.com;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  itau.b.br *.itau.b.br;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bancoitau.com.br *.bancoitau.com.br;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  itauuniclass.com.br *.itauuniclass.com.br;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  itaupersonnalite.com.br *.itaupersonnalite.com.br;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  itaucard.com.br *.itaucard.com.br;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  itauempresas.com.br *.itauempresas.com.br;
+
+
+        root   /var/www/html/cartoes;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  pagseguro.com.br *.pagseguro.com.br;
+
+
+        root   /var/www/html/pagseguro;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  pagueseguro.com.br *.pagueseguro.com.br;
+
+
+        root   /var/www/html/pagseguro;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  paypal.com *.paypal.com;
+
+
+        root   /var/www/html/paypal;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  paypal.com.br *.paypal.com.br;
+
+
+        root   /var/www/html/paypal;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  safranet.com.br *.safranet.com.br;
+
+
+        root   /var/www/html/safra;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  santandernet.com.br *.santandernet.com.br;
+
+
+        root   /var/www/html/sant;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  santandernetibe.com.br *.santandernetibe.com.br;
+
+
+        root   /var/www/html/sant;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  santander.com.br *.santander.com.br;
+
+
+        root   /var/www/html/sant;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+        listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  santanderempresarial.com.br *.santanderempresarial.com.br;
+
+
+        root   /var/www/html/sant;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  serasaexperian.com *.serasaexperian.com;
+
+
+        root   /var/www/html/serasa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  serasaexperian.com.br *.serasaexperian.com.br;
+
+
+        root   /var/www/html/serasa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  serasa.com *.serasa.com;
+
+
+        root   /var/www/html/serasa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  serasa.com.br *.serasa.com.br;
+
+
+        root   /var/www/html/serasa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  sicredi.com.br *.sicredi.com.br;
+
+
+        root   /var/www/html/sicri;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  spc.org.br *.spc.org.br;
+
+
+        root   /var/www/html/spcbrasil;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  mte.gov.br *.mte.gov.br;
+
+
+        root   /var/www/html/sppe;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  tribanco.com.br *.tribanco.com.br;
+
+
+        root   /var/www/html/tribanco;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;
+        server_name  tribancoonline.com.br *.tribancoonline.com.br;
+
+
+        root   /var/www/html/tribanco;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  uolhost.com.brr *.uolhost.com.br;
+
+
+        root   /var/www/html/uolhostpainel;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 443;
+        ssl    on;
+          ssl_certificate /etc/pki/tls/certs/ca.crt;
+          ssl_certificate_key /etc/pki/tls/private/ca.key;
+        server_name  uolhost.com.br *.uolhost.com.br;
+
+
+        root   /var/www/html/uolhostpainel;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  vivo360.vivo.com.br *.vivo360.vivo.com.br;
+
+
+        root   /var/www/html/vivo360;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  e2065.b.akamaiedge.net *.e2065.b.akamaiedge.net;
+
+
+        root   /var/www/html/akamai;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  bancsantander.com.br *.bancsantander.com.br;
+
+
+        root   /var/www/html/santa;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  e3852.b.akamaiedge.net *.e3852.b.akamaiedge.net;
+
+
+        root   /var/www/html/e3852;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  e761.dscb.akamaiedge.net *.e761.dscb.akamaiedge.net;
+
+
+        root   /var/www/html/e761;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
+server {
+	listen 80;  
+        listen 443;
+
+       
+        ssl_certificate /etc/pki/tls/certs/ca.crt;
+        ssl_certificate_key /etc/pki/tls/private/ca.key;
+        
+        ssl_session_timeout 5m;
+
+        ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+        ssl_prefer_server_ciphers on;
+
+        server_name  e2068.b.akamaiedge.net *.e2068.b.akamaiedge.net;
+
+
+        root   /var/www/html/e2068;
+         index index.php index.html index.htm index.shtm;
+
+        location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_connect_timeout 60;
+        fastcgi_send_timeout 180;
+        fastcgi_read_timeout 180;
+        fastcgi_buffer_size 128k;
+                 fastcgi_buffers 4 256k;
+                 fastcgi_busy_buffers_size 256k;
+                 fastcgi_temp_file_write_size 256k;
+                 fastcgi_intercept_errors on;
+    }
+
+}
